@@ -5,6 +5,11 @@ import eslintConfigPrettier from "eslint-config-prettier";
 
 export default defineConfig([
   globalIgnores(["dist/"]),
-  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
-  eslintConfigPrettier
+  {
+    files: ["**/*.{js,mjs,cjs}"],
+    plugins: { js },
+    extends: ["js/recommended"],
+    languageOptions: { globals: globals.browser },
+  },
+  eslintConfigPrettier,
 ]);

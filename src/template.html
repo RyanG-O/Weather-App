@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="background">
+        <div id="search-container">
+            <input type="search" id="search-bar" class="container" placeholder="Search for a city">
+            <div id="search-autocomplete" class="container"></div>
+        </div>
+        <div id="main-info"></div>
+        <div id="week-forecast" class="container">
+            <p id="week-forecast-title">7 Day Forecast</p>
+            <div id="week-forecast-grid"></div>
+        </div>
+        <div id="day-forecast" class="container">
+            <p id="day-forecast-title">Today's Forecast</p>
+            <div id="day-forecast-grid"></div>
+        </div>
+        <div id="day-stats" class="container">
+            <p id="day-stats-title">Air Conditions</p>
+            <div id="day-stats-grid">
+                <div class="day-stats-item">
+                    <p class="day-stats-text">Feels Like</p>
+                    <p id="feels-like">31&deg</p>
+                </div>
+                <div class="day-stats-item">
+                    <p class="day-stats-text">Visibility</p>
+                    <p id="visibility">31&deg</p>
+                </div>
+                <div class="day-stats-item">
+                    <p class="day-stats-text">Wind Speed</p>
+                    <p id="wind-speed">31&deg</p>
+                </div>
+                <div class="day-stats-item">
+                    <p class="day-stats-text">Pressure</p>
+                    <p id="pressure">31&deg</p>
+                </div>
+                <div class="day-stats-item">
+                    <p class="day-stats-text">Humidity</p>
+                    <p id="humidity">31&deg</p>
+                </div>
+                <div class="day-stats-item">
+                    <p class="day-stats-text">UV Index</p>
+                    <p id="uv-index">31&deg</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
 </html>
